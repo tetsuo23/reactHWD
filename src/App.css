@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Exo+2:ital,wght@0,100;0,300;0,400;0,600;0,800;0,900;1,200;1,400;1,600;1,800;1,900&family=Play:wght@400;700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400;500;600;700&family=Permanent+Marker&display=swap");
+* {
+  box-sizing: border-box;
+}
+/* 
+.App {
+  text-align: center;
+  height: 400vh;
+  background-image: url("./assets/backHWD.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+ 
+}
+h4,
+h3,
+p,
+a {
+  font-family: Didact Gothic, sans-serif;
+  font-size: 1.2rem;
+  margin: 10px 0 10px 0;
+  color:#efefef
+}
+h3 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+  /* font-size: 2.5rem!important; */
+  font-size: calc(1.325rem + 0.9vw);
+  color:#e8c34f
+}
+h1 {
+  font-family: Caveat, sans-serif;
+  font-size: 4rem!important;
+  font-weight: 800 !important;
+}
+
+.conteneur {
+  height: 100%;
+  background-color: #1b998b;
+  padding: 2%;
+  /* margin: 10% 0 10% 0; */
+}
+.contenu {
+  /* margin-top: 2%; */
+  padding: 4% !important;
+  background-color:#2d3135;
+  border-radius: 6px;;
+}
+.btn-secondary{
+  min-width:21vw;
+  background-color:#e8c34f;
+}

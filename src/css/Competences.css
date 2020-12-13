@@ -1,0 +1,45 @@
+#comp {
+    height:100%;
+    margin: 10% 0 10% 0;
+    padding:2%;
+    width:100vw;
+}
+
+.Icone {
+    height:100px!important;
+    
+}
+.progress-bar-animated {
+    background-color: #009EB3;
+}
+#barre1{
+width:90%;
+}
+#barre2{
+  width:70%;  
+}#barre3{
+   width:80%; 
+}#barre4{
+   width:90%; 
+}#barre5{
+   width:75%; 
+}
+
+.barre {
+    padding:3%;
+}
+
+.barre img {
+    height: 100px;
+    transition: ease-in-out .3s;
+}
+
+.barre img:hover {
+    transform: scale(1.4);
+    transition: ease-in-out .3s;
+}
+
+.progress {
+    height: 2rem;
+    border: 1px solid #00000022
+}

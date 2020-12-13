@@ -1,0 +1,154 @@
+#page1 {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 10vh;
+  width: 100vw;
+  z-index: 900;
+}
+
+.logo_top {
+  max-width: 20% !important;
+  min-width: 75px !important;
+  position: absolute;
+  top: 22vh;
+  left: 75%;
+  transform: translate(-30%, 50%);
+  transition: ease-in-out 1s;
+}
+.logo_nav {
+  max-width: 7% !important;
+  min-width: 45px !important;
+  transition: ease-in-out 1s;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+.logo_pad {
+  max-width: 50% !important;
+  min-width: 75px !important;
+  position: absolute;
+  top: 65vh;
+  left: 50vw;
+  transition: ease-in-out 1s;
+  transform: translateX(-30vw);
+}
+.logo_hide {
+  transition: ease-in-out 1s;
+  transform: translateX(-350%);
+}
+.logo_smart {
+  max-width: 40% !important;
+  min-width: 75px !important;
+  position: absolute;
+  top: 65vh;
+  left: 50vw;
+  transition: ease-in-out 1s;
+  transform: translateX(-30vw);
+}
+.nav {
+  background-color: #00000022;
+  height: 8vh !important;
+  width: 100%;
+  z-index: 900;
+  padding: 0 0 0 2% !important;
+  position: fixed !important;
+  top: 0;
+}
+.services {
+  padding-left:2%;
+}
+/* .nav2 {
+    background-color: #00000022;
+    height:20%;
+    width: 100%;
+    z-index: 900;
+  } */
+.nav_scroll {
+  background-color: #1b998b;
+  height: 8vh !important;
+  width: 99%;
+  z-index: 900;
+  padding: 0 2% 0 2%;
+  position: fixed !important;
+  top: 0;
+}
+/* .nav_scroll2 {
+    background-color: rgb(216, 216, 216);
+    height: 20%;
+  } */
+.icon {
+  line-height: 0px;
+}
+.img-fluid {
+  min-width: 40px;
+  max-width: 85%;
+}
+
+.tel {
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  width: 33%;
+}
+.tel_hidden {
+  display: none;
+}
+.tel p {
+  line-height: 11px;
+}
+
+.nav-items {
+  color: #efefef;
+}
+
+.arrow,
+.nav-items:hover {
+  color: #e6b31c !important;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1400px) {
+  .nav {
+    height: 6vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav {
+    height: 6vh !important;
+  }
+  .tel {
+    top: 0vh;
+  }
+  .icon {
+    right: 10vw;
+    top: 2vh;
+  }
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  /* .logo{
+    left:25vw;
+    top:65vh;
+  } */
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  /* .logo_pad{
+    top:25vh;
+  } */
+  .logo_hide {
+    transform: translate(-350%, -250%);
+  }
+}
