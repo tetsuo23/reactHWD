@@ -1,27 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faPhone, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+library.add(faArrowUp);
+
 const Comp = () => {
   return (
     <div>
       <div className="container-fluid conteneur" id="comp">
-        <div className="col-1 offset-9">
-          <div className="btn btn-secondary btn-lg d-flex justify-content-center">
-            <Link to="/">Retour</Link>
+        <div className="container-fluid align-items-center d-none d-lg-block contenu">
+          <div className="col-1 offset-9">
+            <div className="btn btn-secondary btn-lg d-flex justify-content-center">
+              <a href="/#working">
+                <FontAwesomeIcon
+                  icon={["fas", "arrow-up"]}
+                  size="lg"
+                  style={{ color: "#efefef" }}
+                  className="arrow"
+                />{" "}
+              </a>
+            </div>
           </div>
-        </div>
-        
-
-        <div className="container-fluid align-items-center d-none d-lg-block contenu"><div className="row h2" id="">
-          <h2 className="text-center">&lt;&gt; Notre expertise &lt;/&gt;</h2>
-        </div>
+          <div className="row h2" id="">
+            <h2 className="text-center">&lt;&gt; Notre expertise &lt;/&gt;</h2>
+          </div>
           <div className="row barre d-flex align-items-center">
             <div className=" d-none d-lg-block col-lg-4 services d-flex justify-content-center align-items-center">
               <h3>Webdesign</h3>
             </div>
             <div className="  d-none d-lg-block col-lg-7 offset-lg-1 d-flex align-items-center justify-content-end">
               <div
-                data-aos="fade-down-left"
+                data-aos="fade-down-right"
                 data-aos-delay="20"
                 data-aos-duration="2000"
                 data-aos-easing="ease-in-out-cubic"
@@ -41,7 +52,7 @@ const Comp = () => {
                 <div
                   className="progress-bar progress-bar-striped progress-bar-animated"
                   id="barre1"
-                  data-aos=" fade-right"
+                  data-aos=" fade-left"
                   data-aos-delay="10"
                   data-aos-duration="2000"
                   data-aos-easing="ease-in-out-cubic"
@@ -55,6 +66,9 @@ const Comp = () => {
 
           <div className="row barre d-flex align-items-center">
             <div className=" d-none d-lg-block col-lg-7 d-flex align-items-center justify-content-end">
+            <div className="col-1 offset-9">
+          </div>
+          
               <div
                 data-aos="fade-down-right"
                 data-aos-delay="25"
@@ -62,14 +76,14 @@ const Comp = () => {
                 data-aos-easing="ease-in-out-cubic"
               >
                 <p>
-                  Je prends en charge le projet de refonte ou de création du
+                  Nous prenons en charge le projet de refonte ou de création du
                   site vitrine de votre entreprise, de sa conception graphique à
-                  son référencement. Je fais de votre site internet plus qu’un
-                  simple site de présentation, un outil de communication vous
-                  permettant de valoriser votre image, de gagner en visibilité
-                  et de trouver de nouveaux clients. Je vous assure une
-                  formation à la gestion de votre site. Le développement de
-                  votre site web est réalisé avec soin et répond aux standards
+                  son référencement. Nous faisons de votre site internet plus
+                  qu’un simple site de présentation, un outil de communication
+                  vous permettant de valoriser votre image, de gagner en
+                  visibilité et de trouver de nouveaux clients. De plus, nous
+                  vous assurons une formation à la gestion de votre site dont le
+                  développement est réalisé avec soin et répond aux standards
                   web du W3C.
                   <li>HTML5 & CSS3</li>
                   <li>
@@ -90,7 +104,7 @@ const Comp = () => {
             </div>
             <div className="  d-none d-lg-block col-lg-7 offset-lg-1 d-flex align-items-center justify-content-end">
               <div
-                data-aos="fade-down-left"
+                data-aos="fade-down-right"
                 data-aos-delay="20"
                 data-aos-duration="2000"
                 data-aos-easing="ease-in-out-cubic"
@@ -99,7 +113,7 @@ const Comp = () => {
                   Votre site internet est développé avec pour objectif
                   d’apparaître dans les premières pages sur les moteurs de
                   recherche.
-                  <li>temps de chargement des pages optimisés</li>
+                  <li>Temps de chargement des pages optimisés</li>
                   <li>Indexation automatique des pages</li>
                   <li>Intégration des différents réseaux sociaux</li>
                 </p>
@@ -118,13 +132,13 @@ const Comp = () => {
               >
                 <p>
                   {" "}
-                  Aujourd’hui, plus de la moitié du traffic sur le web est
+                  Aujourd’hui, plus de la moitié du trafic sur le web est
                   réalisé via un périphérique mobile (smartphone, tablette). Le
                   développement d’une application mobile pour votre entreprise
                   est donc un service devenu incontournable.
-                  <li>développement d’application iOS (iPhone, iPad)</li>
+                  <li>Développement d’application iOS (iPhone, iPad)</li>
                   <li>
-                    développement d’application Android (Asus, Samsung, Sony, …)
+                    Développement d’application Android (Asus, Samsung, Sony, …)
                   </li>
                 </p>
               </div>
@@ -140,7 +154,7 @@ const Comp = () => {
             </div>
             <div className="  d-none d-lg-block col-lg-7 offset-lg-1 d-flex align-items-center justify-content-end">
               <div
-                data-aos="fade-down-left"
+                data-aos="fade-down-right"
                 data-aos-delay="10"
                 data-aos-duration="2000"
                 data-aos-easing="ease-in-out-cubic"
@@ -170,13 +184,28 @@ const Comp = () => {
         {/* ------------------------------ smart ----------------------------------------------- */}
         <div className="container-fluid d-block d-lg-none">
           <div className="container-fluid align-items-center contenu">
+          <div className="col-1 offset-9">
+            <div className="btn btn-secondary btn-lg d-flex justify-content-center">
+              <a href="/#working">
+                <FontAwesomeIcon
+                  icon={["fas", "arrow-up"]}
+                  size="lg"
+                  style={{ color: "#efefef" }}
+                  className="arrow"
+                />{" "}
+              </a>
+            </div>
+          </div>
+          <div className="row h2" id="">
+            <h2 className="text-center">&lt;&gt; Notre expertise &lt;/&gt;</h2>
+          </div>
             <div className="row barre d-flex align-items-center">
               <div className="col-12 services d-flex justify-content-center align-items-center">
                 <h3>Webdesign</h3>
               </div>
               <div className="col-12  d-flex align-items-center justify-content-end">
                 <div
-                  data-aos="fade-down-left"
+                  data-aos="fade-down-right"
                   data-aos-delay="20"
                   data-aos-duration="2000"
                   data-aos-easing="ease-in-out-cubic"
@@ -193,7 +222,7 @@ const Comp = () => {
               </div>
             </div>
             <div className="row barre d-flex align-items-center">
-              <div className="col-12services d-flex justify-content-center align-items-center">
+              <div className="col-12 services d-flex justify-content-center align-items-center">
                 <h3> Developpement Web </h3>
               </div>
               <div className="col-12 d-flex align-items-center justify-content-end">
@@ -204,15 +233,15 @@ const Comp = () => {
                   data-aos-easing="ease-in-out-cubic"
                 >
                   <p>
-                    Je prends en charge le projet de refonte ou de création du
-                    site vitrine de votre entreprise, de sa conception graphique
-                    à son référencement. Je fais de votre site internet plus
-                    qu’un simple site de présentation, un outil de communication
-                    vous permettant de valoriser votre image, de gagner en
-                    visibilité et de trouver de nouveaux clients. Je vous assure
-                    une formation à la gestion de votre site. Le développement
-                    de votre site web est réalisé avec soin et répond aux
-                    standards web du W3C.
+                    Nous prenons en charge le projet de refonte ou de création
+                    du site vitrine de votre entreprise, de sa conception
+                    graphique à son référencement. Nous faisons de votre site
+                    internet plus qu’un simple site de présentation, un outil de
+                    communication vous permettant de valoriser votre image, de
+                    gagner en visibilité et de trouver de nouveaux clients. De
+                    plus, nous vous assurons une formation à la gestion de votre
+                    site dont le développement est réalisé avec soin et répond
+                    aux standards web du W3C.
                     <li>HTML5 & CSS3</li>
                     <li>
                       Design responsive (adaptable ordinateur, tablette,
@@ -228,7 +257,7 @@ const Comp = () => {
               </div>
               <div className="col-12 d-flex align-items-center justify-content-end">
                 <div
-                  data-aos="fade-down-left"
+                  data-aos="fade-down-right"
                   data-aos-delay="20"
                   data-aos-duration="2000"
                   data-aos-easing="ease-in-out-cubic"
@@ -237,7 +266,7 @@ const Comp = () => {
                     Votre site internet est développé avec pour objectif
                     d’apparaître dans les premières pages sur les moteurs de
                     recherche.
-                    <li>temps de chargement des pages optimisés</li>
+                    <li>Temps de chargement des pages optimisés</li>
                     <li>Indexation automatique des pages</li>
                     <li>Intégration des différents réseaux sociaux</li>
                   </p>
@@ -259,13 +288,13 @@ const Comp = () => {
                 >
                   <p>
                     {" "}
-                    Aujourd’hui, plus de la moitié du traffic sur le web est
+                    Aujourd’hui, plus de la moitié du trafic sur le web est
                     réalisé via un périphérique mobile (smartphone, tablette).
                     Le développement d’une application mobile pour votre
                     entreprise est donc un service devenu incontournable.
-                    <li>développement d’application iOS (iPhone, iPad)</li>
+                    <li>Développement d’application iOS (iPhone, iPad)</li>
                     <li>
-                      développement d’application Android (Asus, Samsung, Sony,
+                      Développement d’application Android (Asus, Samsung, Sony,
                       …)
                     </li>
                   </p>
@@ -280,7 +309,7 @@ const Comp = () => {
               </div>
               <div className="col-12 d-flex align-items-center justify-content-end">
                 <div
-                  data-aos="fade-down-left"
+                  data-aos="fade-down-right"
                   data-aos-delay="10"
                   data-aos-duration="2000"
                   data-aos-easing="ease-in-out-cubic"

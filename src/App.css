@@ -40,7 +40,7 @@ a {
   font-family: Didact Gothic, sans-serif;
   font-size: 1.2rem;
   margin: 10px 0 10px 0;
-  color:#efefef
+  color:#efefef !important
 }
 h3 {
   font-size: 2rem;
@@ -53,8 +53,8 @@ h2 {
   color:#e8c34f
 }
 h1 {
-  font-family: Caveat, sans-serif;
-  font-size: 4rem!important;
+  font-family: Fira Sans, sans-serif;
+  font-size: 3rem;
   font-weight: 800 !important;
 }
 
@@ -71,6 +71,11 @@ h1 {
   border-radius: 6px;;
 }
 .btn-secondary{
-  min-width:21vw;
+  min-width:10vw;
   background-color:#e8c34f;
+}
+@media screen and (min-width:580px) {
+  h1 {
+    font-size: 4rem;
+  }
 }

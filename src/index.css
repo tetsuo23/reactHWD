@@ -1,48 +1,44 @@
 body {
-  color :#efefef!important;
+  color: #efefef !important;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #2d3135 !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-*{
+* {
   box-sizing: border-box;
-  
 }
-#root{
-  
+#root {
   text-align: center;
   height: 200%;
- background-color:#2d3135;
-<<<<<<< HEAD
- 
-  /* background-image: url("./assets/backHWD.jpg"); */
-=======
->>>>>>> 102f11f77e91835fca5869ba5a653ee288a41082
+  background-color: #2d3135;
   background-size: cover;
   background-attachment: fixed;
-  position:absolute;
-  top:0;
+  position: absolute;
+  top: 0;
 }
-@media screen and (max-width:580px) {
+@media screen and (max-width: 580px) {
   #root {
-    height:720vh;
+    height: 720vh;
   }
 }
-@media screen and (min-width:580px) and (max-width:1024px) {
+@media screen and (min-width: 580px) and (max-width: 1024px) {
   #root {
-    height:320vh;
+    height: 320vh;
   }
 }
-@media screen and (min-width:1025px) {
+@media screen and (min-width: 1025px) {
   #root {
-    height:420vh;
+    height: 420vh;
   }
 }

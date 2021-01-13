@@ -5,6 +5,7 @@ import "../src/css/Nav.css";
 import "./css/Accueil.css";
 import "./css/Competences.css";
 import "./css/Apropos.css";
+import "./css/tarifs.css"
 
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";

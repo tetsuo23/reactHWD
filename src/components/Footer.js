@@ -56,11 +56,12 @@ const Footer = () => {
                       Portfolio
                     </Link>
                   </p>
-                  <p>
-                    <Link to="/blog" target="_top" rel="noreferrer">
-                      Blog
-                    </Link>
-                  </p>
+                  <a
+                      href="https://www.horizonwebdesign.blog/"
+                      target="_top"
+                      rel="noreferrer"
+                      className="nav-items"
+                    >blog </a>
                 </div>
               </div>
             </div>
