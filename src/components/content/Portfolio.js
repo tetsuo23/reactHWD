@@ -1,13 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faPhone, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+library.add(faArrowUp);
+
 const Portfolio = () => {
   return (
     <div>
       <div className="container-fluid" id="working">
         <div className="col-1 offset-9">
           <div className="btn btn-secondary btn-lg d-flex justify-content-center">
-            <Link to="/">Retour</Link>
+          <Link
+                      to="/"
+                      target="_top"
+                      rel="noreferrer"
+                      className="nav-items"
+                    >
+                     <FontAwesomeIcon
+                        icon={["fas", "arrow-up"]}
+                        size="lg"
+                        style={{ color: "#efefef" }}
+                        className="arrow"
+                      /> 
+                    </Link>
           </div>
         </div>
         <div className="row block_text">
@@ -19,13 +36,13 @@ const Portfolio = () => {
           </div>
           <h5>site en construction</h5>
           <div className="col-4 offset-sm-0 d-flex align-items-center">
-            <a href="#page1">
+            
               <button type="button" className="btn btn-secondary btn-lg">
-                <Link to="/contact" target="_blank" rel="noreferrer">
-                  <p className=" d-md-inline d-none">Contactez-nous</p>
+              <Link to="/contact" target="_blank" rel="noreferrer">
+                  Contact
                 </Link>
               </button>
-            </a>
+            
           </div>
           <div className="row d-flex justify-content-center d-block d-sm-none">
             <div className="col-6 offset-1">

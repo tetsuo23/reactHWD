@@ -28,7 +28,7 @@ const Menu = ({ open }) => {
       <Link to="/portfolio" rel="noreferrer">
         Portfolio
       </Link>
-      <a href="https://blog-horizonwebdesign.netlify.app/" rel="noreferrer">
+      <a href="https://www.horizonwebdesign.blog/" rel="noreferrer">
         Blog
       </a>
 

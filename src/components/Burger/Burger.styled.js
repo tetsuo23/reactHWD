@@ -30,4 +30,5 @@ export const StyledBurger = styled.button`
     transform-origin: 1px;
     background-color:#efefef;
   }
+  
 `;

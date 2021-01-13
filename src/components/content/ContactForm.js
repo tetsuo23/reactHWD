@@ -5,7 +5,14 @@ import "./../../css/ContactForm.css";
 import { init } from "emailjs-com";
 import { Link } from "react-router-dom";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faPhone,
+  faArrowUp } from "@fortawesome/free-solid-svg-icons";
+
 init("user_laNTpyQusDdaH0WxpDeNq");
+
+library.add(faPhone, faArrowUp);
 
 class ContactForm extends Component {
   state = {
@@ -56,16 +63,52 @@ class ContactForm extends Component {
     return (
       <div>
         <div className="container-fluid" id="contact">
-          
-            <div className="col-3 d-flex justify-content-start">
-              <p> <strong>06 45 84 64 03 / 06 30 92 95 33</strong> </p>
+          <div className="col-7 d-flex justify-content-start">
+            <div className="col-2 d-flex align-items-center">
+              <FontAwesomeIcon
+                icon={["fas", "phone"]}
+                size="lg"
+                style={{ color: "#efefef" }}
+              />
             </div>
-            <div className="col-1 offset-8">
-              <div className="btn btn-secondary btn-lg d-flex justify-content-center">
-                <Link to="/">Retougtyhrfthfhgfr</Link>
-              </div>
+            <p>
+              {" "}
+              <strong>&nbsp; 06 45 84 64 03 </strong>{" "}
+            </p>
+          </div>
+          <div className="col-7 d-flex justify-content-start">
+            <div className="col-2 d-flex align-items-center">
+              <FontAwesomeIcon
+                icon={["fas", "phone"]}
+                size="lg"
+                style={{ color: "#efefef" }}
+              />
             </div>
-          
+            <p>
+              {" "}
+              <strong>&nbsp; 06 30 92 95 33 </strong>{" "}
+            </p>
+          </div>
+
+          <div className="col-1 offset-8">
+            <div className="btn btn-secondary btn-xs d-flex justify-content-center">
+            <Link
+                      to="/"
+                      target="_top"
+                      rel="noreferrer"
+                      className="nav-items"
+                    >
+                     <FontAwesomeIcon
+                        icon={["fas", "arrow-up"]}
+                        size="lg"
+                        style={{ color: "#efefef" }}
+                        className="arrow"
+                      /> 
+                    </Link>
+            
+            </div>
+          </div>
+
           <h2 className="p-heading1">Contact</h2>
           <Form onSubmit={this.handleSubmit.bind(this)}>
             <FormGroup>
@@ -134,7 +177,7 @@ class ContactForm extends Component {
             <Button
               variant="primary"
               type="submit"
-              className=" btn btn-secondary col-2"
+              className=" btn btn-secondary col-3"
               onSubmit={this.handleClick}
             >
               Envoyer
